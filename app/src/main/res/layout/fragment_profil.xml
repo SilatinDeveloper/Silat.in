@@ -78,10 +78,10 @@
 
                         <ImageView
                             android:id="@+id/icon1"
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
                             android:scaleType="centerCrop"
-                            android:layout_marginRight="16dp"
+                            android:layout_marginRight="28dp"
                             android:src="@drawable/ic_email_white_48dp"/>
 
                         <TextView
@@ -92,7 +92,7 @@
                             android:text="nikkoeka04@gmail.com"
                             android:layout_toRightOf="@id/icon1"
                             android:textStyle="bold"
-                            android:textSize="16sp"/>
+                            android:textSize="14sp"/>
 
                     </RelativeLayout>
 
@@ -109,10 +109,10 @@
 
                         <ImageView
                             android:id="@+id/icon2"
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
                             android:scaleType="centerCrop"
-                            android:layout_marginRight="16dp"
+                            android:layout_marginRight="28dp"
                             android:src="@drawable/ic_phone_white_48dp"/>
 
                         <TextView
@@ -123,7 +123,7 @@
                             android:text="08988190546"
                             android:layout_toRightOf="@id/icon2"
                             android:textStyle="bold"
-                            android:textSize="16sp"/>
+                            android:textSize="14sp"/>
 
                     </RelativeLayout>
 
@@ -140,10 +140,10 @@
 
                         <ImageView
                             android:id="@+id/icon3"
-                            android:layout_width="36dp"
-                            android:layout_height="36dp"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
                             android:scaleType="centerCrop"
-                            android:layout_marginRight="16dp"
+                            android:layout_marginRight="28dp"
                             android:src="@drawable/ic_home_white_48dp"/>
 
                         <TextView
@@ -154,7 +154,7 @@
                             android:text="Jalan Al-Falah Kp. Gunung RT.05/08, Duri Kosambi, Cengkareng, Jakarta Barat"
                             android:layout_toRightOf="@id/icon3"
                             android:textStyle="bold"
-                            android:textSize="16sp"/>
+                            android:textSize="14sp"/>
 
                     </RelativeLayout>
 
@@ -171,7 +171,7 @@
 
             <Button
                 android:id="@+id/btn_logout"
-                android:layout_width="142dp"
+                android:layout_width="156dp"
                 android:layout_height="42dp"
                 android:layout_marginTop="12dp"
                 android:layout_gravity="center"
@@ -182,7 +182,6 @@
                 android:textColor="@color/colorAccent"/>
 
         </RelativeLayout>
-
 
     </LinearLayout>
 

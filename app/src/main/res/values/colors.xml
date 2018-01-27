@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#2F1D1A</color>
     <color name="colorAccent">#FFF7DA</color>
 
+    <color name="white_color">#FFF</color>
     <color name="orange_color">#FD8E09</color>
     <color name="green_color">#379237</color>
     <color name="purple_color">#8800A0</color>
