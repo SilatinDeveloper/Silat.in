@@ -9,7 +9,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import uinbdg.developer.silatin.Adapter.ViewPagerAdapter;
-import uinbdg.developer.silatin.Fragment.SanggarFragment;
+import uinbdg.developer.silatin.Fragment.SanggarListFragment;
+import uinbdg.developer.silatin.Fragment.SanggarMapsFragment;
 import uinbdg.developer.silatin.R;
 
 public class SanggarActivity extends AppCompatActivity {
@@ -47,8 +48,8 @@ public class SanggarActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new SanggarFragment(), "MAPS");
-        adapter.addFragment(new SanggarFragment(), "LIST");
+        adapter.addFragment(new SanggarMapsFragment(), "MAPS");
+        adapter.addFragment(new SanggarListFragment(), "LIST");
         viewPager.setAdapter(adapter);
     }
 

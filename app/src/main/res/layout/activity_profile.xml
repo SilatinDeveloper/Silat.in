@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="uinbdg.developer.silatin.Fragment.ProfilFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,17 +12,34 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/yellow_color">
+            android:padding="16dp"
+            android:background="@color/colorPrimary">
 
-            <ImageView
-                android:id="@+id/btn_edit_profil"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="8dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:src="@drawable/ic_mode_edit_white_48dp"/>
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_edit_profil"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_mode_edit_white_48dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="center"
+                    android:textSize="9sp"
+                    android:text="Edit Profile"/>
+
+            </LinearLayout>
+
+
 
             <com.mikhaellopez.circularimageview.CircularImageView
                 android:id="@+id/img_user_profile"
@@ -32,7 +48,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/ic_launcher"
+                android:src="@drawable/my_profile"
                 app:civ_border_color="@color/colorAccent"
                 app:civ_border_width="2dp" />
 
@@ -40,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/img_user_profile"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="Nikko Eka Saputra"

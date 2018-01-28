@@ -17,17 +17,15 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import uinbdg.developer.silatin.Adapter.PelatihAdapter;
 import uinbdg.developer.silatin.Adapter.SanggarAdapter;
-import uinbdg.developer.silatin.Model.Pelatih;
 import uinbdg.developer.silatin.Model.Sanggar;
 import uinbdg.developer.silatin.R;
 
-public class PelatihFragment extends Fragment {
+public class SanggarListFragment extends Fragment {
 
-    private RecyclerView rvPelatih;
-    private PelatihAdapter adapter;
-    private List<Pelatih> listPelatih;
+    private RecyclerView rvSanggar;
+    private SanggarAdapter adapter;
+    private List<Sanggar> listSanggar;
 
     private Spinner spAliran;
     private List<String> aliran;
@@ -40,23 +38,23 @@ public class PelatihFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_pelatih, container, false);
+        View view = inflater.inflate(R.layout.fragment_sanggar_list, container, false);
 
-        rvPelatih = (RecyclerView) view.findViewById(R.id.rv_pelatih);
+        rvSanggar = (RecyclerView) view.findViewById(R.id.rv_sanggar);
 
-        listPelatih = new ArrayList<>();
-        listPelatih.add(new Pelatih(R.drawable.ic_launcher_foreground, "Nikko Eka Saputra", "IKS PI Kera Sakti", "Jalan Kelurahan Cipadung No.1, RT.03/08, Cipadung, Cibiru, Kota Bandung", "08988190546"));
-        listPelatih.add(new Pelatih(R.drawable.ic_launcher_foreground, "Nikko Eka Saputra", "IKS PI Kera Sakti", "Jalan Kelurahan Cipadung No.1, RT.03/08, Cipadung, Cibiru, Kota Bandung", "08988190546"));
-        listPelatih.add(new Pelatih(R.drawable.ic_launcher_foreground, "Nikko Eka Saputra", "IKS PI Kera Sakti", "Jalan Kelurahan Cipadung No.1, RT.03/08, Cipadung, Cibiru, Kota Bandung", "08988190546"));
-        listPelatih.add(new Pelatih(R.drawable.ic_launcher_foreground, "Nikko Eka Saputra", "IKS PI Kera Sakti", "Jalan Kelurahan Cipadung No.1, RT.03/08, Cipadung, Cibiru, Kota Bandung", "08988190546"));
-        listPelatih.add(new Pelatih(R.drawable.ic_launcher_foreground, "Nikko Eka Saputra", "IKS PI Kera Sakti", "Jalan Kelurahan Cipadung No.1, RT.03/08, Cipadung, Cibiru, Kota Bandung", "08988190546"));
-        listPelatih.add(new Pelatih(R.drawable.ic_launcher_foreground, "Nikko Eka Saputra", "IKS PI Kera Sakti", "Jalan Kelurahan Cipadung No.1, RT.03/08, Cipadung, Cibiru, Kota Bandung", "08988190546"));
+        listSanggar = new ArrayList<>();
+        listSanggar.add(new Sanggar(R.drawable.ic_launcher_foreground, "Pelatih Silat Tadjimalela", "Jalan A.H Nasution No. 1, Cipadung, Cibiru, Kota Bandung", "08988190546", 0.5));
+        listSanggar.add(new Sanggar(R.drawable.ic_launcher_foreground, "Pelatih Silat IKS PI Kera Sakti", "Jalan A.H Nasution No. 1, Cipadung, Cibiru, Kota Bandung", "08988190546", 0.61));
+        listSanggar.add(new Sanggar(R.drawable.ic_launcher_foreground, "Pelatih Silat Tadjimalela", "Jalan A.H Nasution No. 1, Cipadung, Cibiru, Kota Bandung", "08988190546", 0.5));
+        listSanggar.add(new Sanggar(R.drawable.ic_launcher_foreground, "Pelatih Silat IKS PI Kera Sakti", "Jalan A.H Nasution No. 1, Cipadung, Cibiru, Kota Bandung", "08988190546", 0.61));
+        listSanggar.add(new Sanggar(R.drawable.ic_launcher_foreground, "Pelatih Silat Tadjimalela", "Jalan A.H Nasution No. 1, Cipadung, Cibiru, Kota Bandung", "08988190546", 0.5));
+        listSanggar.add(new Sanggar(R.drawable.ic_launcher_foreground, "Pelatih Silat IKS PI Kera Sakti", "Jalan A.H Nasution No. 1, Cipadung, Cibiru, Kota Bandung", "08988190546", 0.61));
 
-        adapter = new PelatihAdapter(getContext(), listPelatih);
+        adapter = new SanggarAdapter(getContext(), listSanggar);
 
-        rvPelatih.setHasFixedSize(true);
-        rvPelatih.setLayoutManager(new LinearLayoutManager(getContext()));
-        rvPelatih.setAdapter(adapter);
+        rvSanggar.setHasFixedSize(true);
+        rvSanggar.setLayoutManager(new LinearLayoutManager(getContext()));
+        rvSanggar.setAdapter(adapter);
 
         spAliran = (Spinner) view.findViewById(R.id.sp_aliran);
 
@@ -84,5 +82,6 @@ public class PelatihFragment extends Fragment {
         });
 
         return view;
+
     }
 }

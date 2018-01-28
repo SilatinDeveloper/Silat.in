@@ -15,13 +15,11 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import uinbdg.developer.silatin.Adapter.PelatihAdapter;
 import uinbdg.developer.silatin.Adapter.SanggarAdapter;
-import uinbdg.developer.silatin.Model.Pelatih;
 import uinbdg.developer.silatin.Model.Sanggar;
 import uinbdg.developer.silatin.R;
 
-public class SanggarFragment extends Fragment {
+public class SanggarMapsFragment extends Fragment {
 
     private RecyclerView rvSanggar;
     private SanggarAdapter adapter;
@@ -29,10 +27,6 @@ public class SanggarFragment extends Fragment {
 
     private Spinner spAliran;
     private List<String> aliran;
-
-    public SanggarFragment() {
-        // Required empty public constructor
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,7 +36,7 @@ public class SanggarFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_sanggar, container, false);
+        View view = inflater.inflate(R.layout.fragment_sanggar_maps, container, false);
 
         rvSanggar = (RecyclerView) view.findViewById(R.id.rv_sanggar);
 

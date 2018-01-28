@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import uinbdg.developer.silatin.Activity.PelatihActivity;
 import uinbdg.developer.silatin.Activity.ProfileActivity;
 import uinbdg.developer.silatin.Activity.RegisterActivity;
 import uinbdg.developer.silatin.Activity.SanggarActivity;
@@ -35,9 +36,8 @@ public class DashboardActivity extends AppCompatActivity {
         btnMenuPelatih.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(DashboardActivity.this, "Coming Soon !", Toast.LENGTH_SHORT).show();
-//                Intent i = new Intent(DashboardActivity.this, PelatihActivity.class);
-//                startActivity(i);
+                Intent i = new Intent(DashboardActivity.this, PelatihActivity.class);
+                startActivity(i);
             }
         });
 

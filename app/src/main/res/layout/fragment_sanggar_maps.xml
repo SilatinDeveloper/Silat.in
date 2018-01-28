@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorAccent"
-    tools:context="uinbdg.developer.silatin.Fragment.SanggarFragment">
+    android:background="@color/colorAccent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +20,7 @@
             android:text="FILTER ALIRAN : "
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/white_color"/>
+            android:textColor="@color/colorPrimaryDark"/>
 
         <Spinner
             android:id="@+id/sp_aliran"
