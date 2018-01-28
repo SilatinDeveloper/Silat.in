@@ -18,7 +18,6 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import uinbdg.developer.silatin.MainActivity;
 import uinbdg.developer.silatin.Model.Pelatih;
 import uinbdg.developer.silatin.R;
 
