@@ -22,7 +22,10 @@
         <activity android:name=".Activity.SanggarActivity" />
         <activity android:name=".Activity.ProfileActivity" />
         <activity android:name=".Activity.RegisterActivity" />
-        <activity android:name=".Activity.PelatihActivity"></activity>
+        <activity android:name=".Activity.PelatihActivity" />
+        <activity android:name=".Activity.EditProfileActivity" />
+        <activity android:name=".Activity.DetailSanggarActivity" />
+        <activity android:name=".Activity.DetailPelatihActivity"></activity>
     </application>
 
 </manifest>
