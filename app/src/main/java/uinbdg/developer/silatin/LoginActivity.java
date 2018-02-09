@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         clickHere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a = new Intent(getApplicationContext(), MainActivity.class);
+                Intent a = new Intent(getApplicationContext(), LupaPassword.class);
                 startActivity(a);
             }
         });

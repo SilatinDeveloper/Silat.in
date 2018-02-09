@@ -49,7 +49,7 @@
                     android:layout_toRightOf="@id/image"
                     android:layout_below="@+id/tv_nama_pelatih"
                     android:text="Jalan Kelurahan Cipadung No. 1, RT. 03/08, Cipadung, Cibiru, Kota Bandung"
-                    android:textSize="16dp"/>
+                    android:textSize="14sp"/>
 
                 <TextView
                     android:id="@+id/tv_no_telp_pelatih"
@@ -60,7 +60,7 @@
                     android:layout_toRightOf="@id/image"
                     android:layout_below="@+id/tv_alamat_pelatih"
                     android:text="Telp. 08988190546"
-                    android:textSize="16dp"/>
+                    android:textSize="14sp"/>
 
             </RelativeLayout>
 
@@ -81,6 +81,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:text="IKS PI Kera Sakti"
+                    android:textSize="14sp"
                     android:textStyle="bold"/>
 
                 <Button

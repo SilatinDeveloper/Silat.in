@@ -1,6 +1,11 @@
 package uinbdg.developer.silatin.Adapter;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -58,6 +63,20 @@ public class PelatihAdapter extends RecyclerView.Adapter<PelatihAdapter.ViewHold
             @Override
             public void onClick(View view) {
                 Toast.makeText(context, pelatihModel.getNamaPelatih(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        holder.btnCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //masih error
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse(pelatihModel.getNoTelpPelatih()));
+                callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                if (ActivityCompat.checkSelfPermission(context,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+                context.startActivity(callIntent);
             }
         });
     }
